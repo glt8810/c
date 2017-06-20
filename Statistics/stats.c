@@ -42,11 +42,11 @@ int main(void) {
 		}
 	//error message if user tries to put a grade lower than 0 or higher than 100
 		else {
-			printf("Enter the grade of student %d: \n", student + 1);
+			printf("Enter the grade of student %d (between 0 and 100): \n", student + 1);
 			scanf_s("%d%*c", &classe[student].nota);
 			while ((classe[student].nota < 0) || (classe[student].nota > 100)) {
 				printf("Error! You have to enter a grade between 0 and 100. \n");
-				printf("Enter the grade of student %d: \n", student + 1);
+				printf("Enter the grade of student %d (between 0 and 100): \n", student + 1);
 				scanf_s("%d%*c", &classe[student].nota);
 			}
 			fflush(stdin);
